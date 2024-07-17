@@ -1,0 +1,384 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  font-family: "Lato";
+}
+
+.home__body {
+  background: url("../img/windows_11_purple_abstract_dark_background_dark_purple_dark_3840x2160.png");
+  background-size: 200%;
+  height: 100dvh;
+  padding: 10% 0 0 0;
+}
+.home__description {
+  text-align: center;
+  padding: 10%;
+  letter-spacing: 5px;
+  line-height: 40px;
+  color: white;
+  font-size: 34px;
+}
+.home__description::first-line {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.home__arrow-down {
+  text-align: center;
+  margin: 5%;
+}
+.home__arrow-down img {
+  width: 1%;
+  height: auto;
+}
+
+.logo {
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  color: white;
+  z-index: 2;
+}
+.logo::before {
+  content: "";
+  background: url("../img/pngwing.com.png") no-repeat center center;
+  position: absolute;
+  background-size: contain;
+  height: 200%;
+  width: 7%;
+  top: -50%;
+  left: 46.75%;
+  z-index: 1;
+}
+
+.button {
+  border: 1px solid white;
+  color: white;
+  margin: 0 auto;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-align: center;
+  width: 11%;
+  padding: 1% 0 1% 0;
+}
+
+.contact .line, .portfolio .line, .about .line, .line {
+  border-bottom: 1px white solid;
+  width: 8%;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-item {
+  font-size: 15px;
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1.1% 1.5%;
+}
+.menu-item:hover {
+  color: #ada074;
+}
+
+.about__body {
+  background: white;
+  height: 90dvh;
+}
+.about__description {
+  text-align: center;
+  font-size: 14px;
+  line-height: 26px;
+  color: #868585;
+  font-weight: 300;
+  font-family: "Lato";
+  text-align: center;
+}
+.about__description-text {
+  padding: 2.5% 27% 5% 27%;
+}
+.about header {
+  height: 6dvh;
+  background: white;
+  border-bottom: 1px solid #ada074;
+  margin: 0 0 9% 0;
+}
+.about .line {
+  border-bottom-color: black;
+}
+.about__content {
+  display: flex;
+  justify-content: center;
+  padding: 0 20%;
+}
+.about__content-title {
+  font-size: 22px;
+  letter-spacing: 4px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Lato";
+  text-align: center;
+  padding: 4% 0;
+}
+.about__content-item {
+  width: 100%;
+}
+
+.about__img img {
+  width: 100px;
+  height: auto;
+}
+
+.title {
+  font-size: 34px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Lato";
+  text-align: center;
+  padding: 0 10%;
+}
+
+.portfolio__body {
+  background: rgb(243, 243, 243);
+  height: 200dvh;
+  padding: 0 0 0;
+}
+.portfolio .line {
+  border-bottom-color: black;
+}
+.portfolio .title {
+  padding: 8% 10% 2.5% 10%;
+}
+.portfolio__content-item {
+  max-width: 537px;
+  width: 537px;
+  min-width: 50px;
+  height: 363px;
+  min-height: 25px;
+  background: #eaeaea;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Lato";
+  text-align: center;
+  padding: 30%;
+}
+.portfolio table {
+  padding: 6% 10% 4% 10%;
+  border-spacing: 20px 10px;
+}
+.portfolio .button {
+  color: black;
+  border-color: black;
+  margin: -0.75% auto;
+}
+
+.partners__body {
+  height: 30dvh;
+  background: url("../img/windows_11_purple_abstract_dark_background_dark_purple_dark_3840x2160.png") 50% 50%;
+}
+.partners__logo {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Lato";
+  text-align: center;
+  padding: 4%;
+}
+.partners__partners {
+  display: flex;
+  justify-content: center;
+}
+.partners__partner-logo {
+  padding: 1% 3.5%;
+}
+.partners img {
+  width: 30px;
+  height: auto;
+}
+
+.contact__body {
+  height: 73dvh;
+}
+.contact .title {
+  padding: 5% 0 0 0;
+}
+.contact .line {
+  border-bottom-color: black;
+}
+.contact__content {
+  display: flex;
+  justify-content: center;
+  padding: 6% 0;
+}
+.contact__descriprion {
+  padding: 0 10% 0 2%;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  font-weight: 300;
+  font-family: "Lato";
+}
+.contact__form {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Lato";
+  padding: 0 40px 0 0;
+}
+.contact__table table {
+  border-spacing: 30px 0;
+}
+.contact__table input {
+  border-top: 1px solid black;
+  margin: 10% 0 0 0;
+  background: #f8f7f7;
+  height: 35px;
+  width: 161px;
+}
+.contact__message {
+  padding: 60px 0 0 0;
+}
+.contact__message input {
+  height: 118px;
+  width: 100%;
+  margin: 5% 0;
+}
+.contact__button {
+  padding: 0 83%;
+}
+.contact__button input {
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Lato";
+  text-align: center;
+  background: #ffffff;
+}
+.contact__button :hover {
+  color: #ada074;
+}
+.contact table {
+  padding: -200px 0 0 0;
+  border-spacing: 50px 0 0 0;
+}
+
+.name {
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+
+.mail {
+  font-weight: bold;
+}
+
+.e-mail {
+  border-bottom: 1px solid black;
+}
+
+.basement__body {
+  background: #3c3c3c;
+  height: 30dvh;
+}
+.basement__text {
+  font-size: 14px;
+  text-align: center;
+  color: #6c6c6c;
+  padding: 1% 0 0 0;
+  font-family: "Lato";
+}
+.basement .logo {
+  padding: 4% 0 3% 0;
+}
+.basement .menu-item {
+  font-size: 14px;
+  color: #a4a4a4;
+  font-weight: 400;
+  font-family: "Lato";
+}/*# sourceMappingURL=style.css.map */
